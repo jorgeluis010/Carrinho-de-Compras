@@ -22,7 +22,21 @@ const cursos: ICurso[] = [
     { id: 5, titulo: 'Camisa do Barcelona 08-09', preco: 290.00, imagem: 'https://www.vintagefootballshirts.com/uploads/products/images/2008-09-barcelona-home-shirt-32042-1.jpg' },
     { id: 6, titulo: 'Camisa do Santos 2012', preco: 290.00, imagem: 'https://acdn.mitiendanube.com/stores/002/523/902/products/ep493vopohfz2an1-e3a93153de893dc28216307038620577-640-0.jpg' },
     { id: 7, titulo: 'Camisa do Corinthians 2024', preco: 250.00, imagem: 'https://www.lojasportfanatics.com.br/cdn/shop/files/Corinthians-branca-patrocinio_800x.png?v=1717678842' },
+    { id: 16, titulo: 'Camisa do São Paulo 2024', preco: 250.00, imagem: 'https://static.saostore.com.br/produtos/camisa-sao-paulo-i-2425-sn-jogador-new-balance-masculina/24/39U-9323-024/39U-9323-024_zoom1.jpg?ts=1705669959?ims=400x' },
     { id: 8, titulo: 'Camisa do Palmeiras 2024', preco: 250.00, imagem: 'https://lojapalmeiras.vteximg.com.br/arquivos/ids/181243-1000-1000/_0067_777230_01.jpg?v=638418776040430000' },
+    { id: 9, titulo: 'Camisa do Chelsea 24-25', preco: 300.00, imagem: 'https://dasports.com.br/cdn/shop/files/Camisa-titular-do-Chelsea-FC-2024-2025-e-lancada-pela-Nike-7-585x585_500x.png?v=1721355632' },
+    { id: 10, titulo: 'Camisa do Milan 24-25', preco: 300.00, imagem: "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_600,h_600/global/774949/01/fnd/PNA/fmt/png/AC-Milan-24/25-Men's-Authentic-Home-Soccer-Jersey" },
+    { id: 11, titulo: 'Camisa do PSG 24-25', preco: 300.00, imagem: 'https://dcdn.mitiendanube.com/stores/003/589/195/products/psg-paris-saint-germain-camisa-nova-nike-24-25-2024-2025-titular-home-casa-1-i-mbappe-neymar-rai-ronaldinho-gaucho-qatar-messi-leblues-3-1d27c6a712f16aac7417160775318084-1024-1024.png' },
+    { id: 12, titulo: 'Camisa da Juventus 24-25', preco: 300.00, imagem: 'https://acdn.mitiendanube.com/stores/001/409/577/products/camisa-titular-juventus-24-25-home-adidas-preto-e-branco-masculino-torcedor-futebol-authentic-oficial-velha-senhora-calcio-seriaa-champions-league-793abc9e814fd543c917211435409482-640-0.png' },
+    { id: 13, titulo: 'Camisa do Liverpool 24-25', preco: 300.00, imagem: 'https://dcdn.mitiendanube.com/stores/003/589/195/products/liverpool-nova-camisa-nike-24-25-2024-2025-titular-casa-home-principal-1-i-vermelha-jurgen-klopp-salah-reds-champions-ucl-5-6bf4e331e6d9bc64f717160769301704-1024-1024.png' },
+    { id: 14, titulo: 'Camisa do Bayern de Munique 24-25', preco: 300.00, imagem: 'https://acdn.mitiendanube.com/stores/002/935/203/products/camisa-bayern-de-minichen-munique-24-25-vermelho-2-05582cf52a857a049617194323223466-1024-1024.png' },
+    { id: 15, titulo: 'Camisa do Manchester City 24-25', preco: 300.00, imagem: 'https://img-br.prvstatic.com/front/get/photo/241613_-_images_-_products_-_770437-01_AZUL_-_templ1.jpg' },
+    { id: 17, titulo: 'Camisa do Arsenal 2024', preco: 300.00, imagem: 'https://acdn.mitiendanube.com/stores/001/409/577/products/camisa-titular-arsenal-home-24-25-adidas-vermelha-masculina-torcedor-premier-league-champions-league-gunners-arteta-odergard-martinelli-70d37564e7ef5e5c5817158035278363-640-0.png' },
+    { id: 18, titulo: 'Camisa do Al Nassr 24-25', preco: 300.00, imagem: 'https://acdn.mitiendanube.com/stores/001/409/577/products/camisa-titular-al-nassr-home-i-24-25-adidas-amarelo-masculino-torcedor-futebol-oficial-authentic-cr7-sane-liga-saudita-64075b72da1b74de6517224562244694-480-0.png' },
+    { id: 19, titulo: 'Camisa do Inter Miami 2024', preco: 300.00, imagem: 'https://acdn.mitiendanube.com/stores/001/620/789/products/48-446132c57e103ba6fc17103002595432-640-0.png' },
+    { id: 20, titulo: 'Camisa do Borussia Dortmund 24-25', preco: 300.00, imagem: 'https://acdn.mitiendanube.com/stores/002/341/698/products/camisa-titular-borussia-dortmund-2024-25-puma-1-00106a76dfd4e7a5e417159545157510-480-0.png' },
+    
+    
 ]
 
 const MarketCarPages = () => {
@@ -163,7 +177,7 @@ const MarketCarPages = () => {
                         {filteredCursos.map(curso => (
                             <li key={curso.id} className="course-item"
                                 onMouseEnter={(e) => {
-                                    e.currentTarget.style.transform = 'scale(1.05)';
+                                    e.currentTarget.style.transform = 'scale(1.02)';
                                     e.currentTarget.style.boxShadow = '0 8px 16px rgba(0, 0, 0, 0.2)';
                                 }}
                                 onMouseLeave={(e) => {
